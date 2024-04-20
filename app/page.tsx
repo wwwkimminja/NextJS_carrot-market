@@ -2,7 +2,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-gray-100 h-screen flex items-center justify-center p-5 dark:bg-gray-700">
+    <main className="bg-gray-100 h-screen flex flex-col items-center justify-center p-5 dark:bg-gray-700">
+       <div className="bg-white shadow-lg p-5 rounded-3xl w-full mb-3 max-w-screen-sm flex flex-col gap-5">
+        <input className="w-full rounded-full bg-gray-200 pl-5 py-3 outline-none ring ring-transparent focus:ring-orange-500 focus:ring-offset-2 transition-shadow placeholder:drop-shadow" type="text" placeholder="Search here..."/>
+        <button className="bg-black bg-opacity-50 text-white py-2 rounded-full active:scale-90 transition-transform font-medium outline-none">Search</button>
+       </div>
       <div className="bg-white shadow-lg p-5 rounded-3xl w-full max-w-screen-sm dark:bg-gray-500">
         <div className="flex justify-between items-center">
           <div className="flex flex-col">
@@ -23,7 +27,7 @@ export default function Home() {
             <span>Expected</span>
             <span>Sorting center</span>
             <span>In transit</span>
-            <span className=" text-gray-400 dark:text-gray-600">Delivered</span>
+            <span className=" text-gray-400 dark:text-gray-600">Delivered</span> 
           </div>
       </div>
     </main>
