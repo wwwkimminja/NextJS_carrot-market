@@ -40,6 +40,17 @@ export default function Home() {
           <span className=" text-gray-400 dark:text-gray-600">Delivered</span>
         </div>
       </div>
+      <div className="bg-white shadow-lg p-5 rounded-3xl w-full 
+      max-w-screen-sm flex flex-col md:flex-row gap-2 ">
+        {["Nico","Me","You","Jenni",""].map((person,index)=>(
+          <div key={index} className="flex items-center gap-5 odd:bg-gray-200 even:bg-cyan-100 p-2.5 rounded-xl border-b-2 last:border-0">
+            <div className="size-10 bg-blue-400 rounded-full" /> 
+            <span className="text-lg font-medium empty:w-24 empty:h-5 empty:rounded-full empty:animate-pulse empty:bg-gray-300">{person}</span>
+            <div className="size-6 animate-bounce bg-red-500 text-white flex items-center justify-center rounded-full"><span>{index}</span></div>
+          </div>
+        ))}
+
+      </div>
     </main>
 
   );
