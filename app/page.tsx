@@ -26,7 +26,7 @@ export default function Home() {
           <div className="size-12 bg-orange-400 rounded-full" />
         </div>
         <div className="my-2 flex items-center gap-2">
-          <span className="bg-green-400 text-white uppercase rounded-full px-3 py-1.5 text-xs font-medium transition hover:bg-green-500 hover:scale-125">Today</span>
+          <span className="bg-green-400 text-white uppercase rounded-cool-name px-3 py-1.5 text-xs font-medium transition hover:bg-green-500 hover:scale-125">Today</span>
           <span className=" dark:text-gray-100">9:30-10:00</span>
         </div>
         <div className="relative">
