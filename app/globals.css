@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 
+@layer base{
+  a{
+    @apply text-blue-500
+  }
+}
+
+.btn {
+  @apply w-full bg-black h-10 text-white rounded-cool-name;
+}
