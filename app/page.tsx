@@ -9,14 +9,16 @@ export default function Home() {
         <h2 className="text-2xl">Welcome to Carrot Market</h2>
       </div>
       <div className="flex flex-col items-center gap-3 w-full">
-        <Link href="/create-account" 
-        className="w-full bg-orange-500 text-white text-lg font-medium 
-        py-2.5 rounded-md text-center hover:bg-orange-400 transition-colors">Start</Link>
+        <Link href="/create-account" className="primary-btn py-2.5 text-lg">
+          Start
+        </Link>
         <div className="flex gap-2">
           <span>Do you already have an account?</span>
-          <Link href="/login" className="hover:underline underline-offset-4">Login</Link>
+          <Link href="/login" className="hover:underline underline-offset-4">
+            Login
+          </Link>
         </div>
-      </div> 
+      </div>
     </div>
   );
 }
