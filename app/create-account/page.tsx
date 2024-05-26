@@ -1,8 +1,8 @@
-import { ChatBubbleOvalLeftEllipsisIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import React from "react";
 import FormInput from "../components/form-input";
 import FormBtn from "../components/form-btn";
+import SocialLogin from "../components/social-login-btn";
 
 export default function CreateAccount() {
   return (
@@ -18,15 +18,7 @@ export default function CreateAccount() {
         <FormInput type="password" placeholder="confirm password" required={true} errors={[]} />
         <FormBtn loading={false} text="Create Account" />
       </form>
-      <div className="w-full h-px bg-neutral-500" />
-      <div>
-        <Link className="primary-btn flex h-10 items-center justify-center gap-3 " href="/sms">
-          <span>
-            <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-6" />
-          </span>
-          <span>Sign up with SMS</span>
-        </Link>
-      </div>
+      <SocialLogin />
     </div>
   );
 }
