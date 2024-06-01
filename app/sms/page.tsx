@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import FormInput from "../components/form-input";
-import FormBtn from "../components/form-btn";
-import SocialLogin from "../components/social-login-btn";
+import Input from "../components/input";
+import Button from "../components/button";
 
 export default function SMSLogin() {
   return (
@@ -12,9 +11,9 @@ export default function SMSLogin() {
         <h2 className="text-xl">Verify your phone number.</h2>
       </div>
       <form className="flex flex-col gap-3">
-        <FormInput name="email" type="number" placeholder="phone number" required={true} errors={[]} />
-        <FormInput name="verification-code" type="number" placeholder="Verification Code" required={true} errors={[]} />
-        <FormBtn text="Verify" />
+        <Input name="email" type="number" placeholder="phone number" required={true} errors={[]} />
+        <Input name="verification-code" type="number" placeholder="Verification Code" required={true} errors={[]} />
+        <Button text="Verify" />
       </form>
     </div>
   );
