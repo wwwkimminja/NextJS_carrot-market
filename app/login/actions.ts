@@ -1,6 +1,6 @@
 "use server";
 import { z } from "zod";
-import { PASSWORD_MIN_LENGTH, PASSWORD_REGEX, PASSWORD_REGEX_ERROR } from "../lib/constants";
+import { PASSWORD_MIN_LENGTH, PASSWORD_REGEX, PASSWORD_REGEX_ERROR } from "@/lib/constants";
 
 const formSchema = z.object({
   email: z.string().email().toLowerCase(),
@@ -13,7 +13,6 @@ const formSchema = z.object({
 });
 
 export const login = async (prevState: any, formData: FormData) => {
-  
   const data = {
     email: formData.get("email"),
     password: formData.get("password"),

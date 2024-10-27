@@ -1,7 +1,7 @@
 "use server";
 
 import { z } from "zod";
-import { PASSWORD_MIN_LENGTH, PASSWORD_REGEX, PASSWORD_REGEX_ERROR } from "../lib/constants";
+import { PASSWORD_MIN_LENGTH, PASSWORD_REGEX, PASSWORD_REGEX_ERROR } from "@/lib/constants";
 
 const checkUsername = (username: string) => !username.includes("potato");
 const checkPasswords = ({ password, confirm_password }: { password: string; confirm_password: string }) =>
